@@ -22,3 +22,8 @@
   display: flex;
   flex-wrap: flex-start;
 }
+
+.resy-container {
+  display: flex;
+  flex-direction: row;
+}

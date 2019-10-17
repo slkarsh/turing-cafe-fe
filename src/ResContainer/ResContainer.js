@@ -3,7 +3,6 @@ import ResCard from '../ResCard/ResCard'
 import './ResContainer.css'
 
 const ResContainer = ({ reservations }) => {
-    console.log('reservations', reservations)
     const resCards = reservations.map(reservation => {
         return <ResCard
             key={reservation.id}
@@ -14,11 +13,10 @@ const ResContainer = ({ reservations }) => {
             id={reservation.id} 
         />
     })
-
     return (
-        <section className='res-cont'>
+        <main className='res-cont'>
             {resCards}
-        </section>
+        </main>
     )
 }
 
