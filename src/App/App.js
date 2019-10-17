@@ -18,9 +18,9 @@ class App extends Component {
   }
 
   addReservation = newRes => {
-    // console.log('new res', newRes)
     postRes(newRes)
-      .then(reservation => this.setState({ reservations: [...this.state.reservations, reservation]}))
+    //this works to make a reservation but the page crashes and has to be refreshed to see it????
+      .then(reservation => this.setState({...this.state.reservations, reservation}))
   }
 
   render() {
