@@ -1,0 +1,12 @@
+.res-card {
+    background-color: white;
+    border: 4px solid teal;
+    text-align: center;
+    margin: auto;
+    color: teal;
+    width: 300px;
+}
+
+.guest-name {
+    font-weight: bold
+}
