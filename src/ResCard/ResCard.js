@@ -9,6 +9,7 @@ const ResCard = ({ id, name, date, time, number }) => {
             <h4 className='res-date'>{date}</h4>
             <h4 className='res-time'>{time}</h4>
             <p className='res-guest-num'>Number of guests: {number}</p>
+            <button>Cancel Reservation</button>
         </div>
     )
 
