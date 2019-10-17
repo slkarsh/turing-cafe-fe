@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './ResForm.css'
 
 class ResForm extends Component {
     constructor() {
