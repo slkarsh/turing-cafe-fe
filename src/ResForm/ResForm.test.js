@@ -42,4 +42,15 @@ it('should reset state when resetInputs is called', () => {
     expect(wrapper.state('time')).toEqual(expectTime)
     expect(wrapper.state('guests')).toEqual(expectGuest)
 })
+
+it('should run createReservation when the submit button is clicked', () => {
+    wrapper.instance().createReservation = jest.fn();
+    wrapper.instance().forceUpdate();
+
+    const mockEvent = { preventDefault: jest.fn()}
+
+    wrapper.find('button').simulate('click', mockEvent)
+
+    expect(wrapper.instance().createReservation).toHaveBeenCalled();
+})
 })
