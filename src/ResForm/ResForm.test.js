@@ -23,6 +23,23 @@ it('should update state when handleChange is called', () => {
 })
 
 it('should reset state when resetInputs is called', () => {
-    const expected
+    const expectName = ''
+    const expectDate = ''
+    const expectTime = ''
+    const expectGuest = 0
+
+    wrapper.instance().setState({
+        name: 'Aaron',
+        date: '11/13',
+        time: '8:00',
+        guests: 1
+    })
+
+    wrapper.instance().resetInputs();
+
+    expect(wrapper.state('name')).toEqual(expectName)
+    expect(wrapper.state('date')).toEqual(expectDate)
+    expect(wrapper.state('time')).toEqual(expectTime)
+    expect(wrapper.state('guests')).toEqual(expectGuest)
 })
 })
