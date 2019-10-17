@@ -53,4 +53,12 @@ it('should run createReservation when the submit button is clicked', () => {
 
     expect(wrapper.instance().createReservation).toHaveBeenCalled();
 })
+
+it('should call resetInputs when createReservation is called', () => {
+    wrapper.instance().resetInputs = jest.fn();
+
+    wrapper.instance().createReservation({preventDefault: jest.fn()})
+
+    expect(wrapper.instance().resetInputs).toHaveBeenCalled();
+})
 })
