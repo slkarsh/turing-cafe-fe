@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResContainer should match the snapshot when rendered correctly 1`] = `
+<main
+  className="res-cont"
+>
+  <ResCard
+    date="12/22"
+    id={2}
+    key="2"
+    name="Sara"
+    number={2}
+    time="7:00"
+  />
+  <ResCard
+    date="11/11"
+    id={4}
+    key="4"
+    name="Oliver"
+    number={1}
+    time="8:00"
+  />
+</main>
+`;
