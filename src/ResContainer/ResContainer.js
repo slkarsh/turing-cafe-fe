@@ -3,6 +3,7 @@ import ResCard from '../ResCard/ResCard'
 import './ResContainer.css'
 
 const ResContainer = ({ reservations }) => {
+    console.log('reservations', reservations)
     const resCards = reservations.map(reservation => {
         return <ResCard
             key={reservation.id}
